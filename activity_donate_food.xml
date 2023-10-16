@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".donate_food">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/josefin_sans"
+        android:letterSpacing="0.09"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="DONATE FOOD"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/car"
+        android:layout_width="match_parent"
+
+        android:layout_height="620dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.568">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/donatemoney"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/packag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package Id : TR1234444"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/josefin_sans"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/donname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/change"
+                android:fontFamily="@font/josefin_sans"
+                android:hint="Enter Donor's Name"
+                android:inputType="text"
+                android:letterSpacing="0.07"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#3f393e"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/donnumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/change"
+                android:fontFamily="@font/josefin_sans"
+                android:hint="Enter Mobile No."
+                android:maxLength="10"
+                android:inputType="number"
+                android:letterSpacing="0.07"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#3f393e"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/donitem"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/change"
+                android:fontFamily="@font/josefin_sans"
+                android:hint="Enter Food Item"
+                android:inputType="text"
+                android:letterSpacing="0.07"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#3f393e"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/donqty"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/change"
+                android:fontFamily="@font/josefin_sans"
+                android:hint="Enter Quantity"
+                android:inputType="numberDecimal"
+                android:letterSpacing="0.07"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#3f393e"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/donaddress"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/change"
+                android:fontFamily="@font/josefin_sans"
+                android:gravity="top"
+                android:paddingTop="8dp"
+                android:hint="Enter Address"
+                android:inputType="textMultiLine"
+                android:letterSpacing="0.07"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#3f393e"
+                android:textCursorDrawable="@null"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/donbutton"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripple"
+                    android:fontFamily="@font/josefin_sans"
+                    android:gravity="center"
+                    android:letterSpacing="0.17"
+                    android:text="Donate"
+                    android:textColor="#3f393e"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/donpro"
+                    android:layout_width="60dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/progressbg"
+                    android:progressTint="#ffc200"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/donbutton"
+                    app:layout_constraintStart_toStartOf="@+id/donbutton"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

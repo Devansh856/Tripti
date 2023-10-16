@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/outline_home_24"
+
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_donate"
+        android:icon="@drawable/donate"
+
+        android:title="Donate Food" />
+    <item
+        android:id="@+id/nav_receive"
+        android:icon="@drawable/receive"
+        android:title="Receive Food" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/outline_history_24"
+
+        android:title="History" />
+
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/news"
+
+        android:title="Daily News" />
+
+    <item
+        android:id="@+id/nav_money"
+        android:icon="@drawable/donmoney"
+        android:title="Help Us" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/contact_us"
+        android:title="About Us" />
+    <item
+
+
+        android:id="@+id/nav_share"
+        android:icon="@drawable/outline_share_24"
+        android:title="Share App" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title=" Logout" />
+
+
+</group>
+
+</menu>

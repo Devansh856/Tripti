@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgot_password2"
+    tools:context=".forgot2">
+
+
+    <ProgressBar
+        android:id="@+id/prg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:progressTint="#ffc200"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progressbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ms" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/josefin_sans"
+        android:letterSpacing="0.1"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="VERIFICATION"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="368dp"
+        android:fontFamily="@font/josefin_sans"
+        android:text="We will send you OTP on this email."
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/msg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="(xyz@gmail.com)"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg1" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg2">
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/otp"
+            android:fontFamily="@font/josefin_sans"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+
+            android:layout_margin="4dp"
+            android:background="@drawable/otp"
+            android:fontFamily="@font/josefin_sans"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/otp"
+            android:fontFamily="@font/josefin_sans"
+            android:gravity="center"
+            android:maxLength="1"
+            android:inputType="number"
+
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/otp"
+            android:fontFamily="@font/josefin_sans"
+            android:gravity="center"
+            android:inputType="number"
+
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/otp"
+            android:inputType="number"
+
+            android:fontFamily="@font/josefin_sans"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/otp"
+            android:inputType="number"
+
+            android:fontFamily="@font/josefin_sans"
+            android:gravity="center"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="Didn't receive the OTP"
+        android:textColor="@color/black"
+
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/resend"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="RESEND OTP"
+        android:textColor="#bb1400"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verifyotp"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/josefin_sans"
+        android:letterSpacing="0.19"
+        android:text="VERIFIY OTP"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ms" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
